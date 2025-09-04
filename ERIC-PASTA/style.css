@@ -1,0 +1,15 @@
+body{
+    background-image:linear-gradient(to right,#3C3939,#3C3939,#A23751 ) ;
+}
+.navbar-logo{
+    width: 8vh;
+}
+#tuneo{
+    font-size: 4vh !important
+
+}
+#navbar a {
+  color: #FFDBE4;
+  font-size: 2vh;
+
+}
