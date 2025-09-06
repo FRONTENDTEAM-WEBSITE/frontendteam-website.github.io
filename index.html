@@ -1,7 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    
+  <style>
+    body{
+    background: linear-gradient(120deg, #3C3930 30%, #A23751 100%);
+    background-blend-mode: overlay;
+    height: 1000px;
+    }
+    .navbar-logo{
+        width: 8vh;
+    }
+
+    #tuneo{
+        font-size: 4vh !important;
+        position: relative;
+        top: 8px;
+    }
+    #navbar {
+        border-bottom: 1px solid black;
+    }
+    #navbar a {
+      color: #FFDBE4;
+      font-size: 2vh;
+
+    }
+    .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28 255, 219, 228, 1 %29' stroke-width='3' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+  </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
@@ -11,6 +37,29 @@
 </head>
 <body>
   <!--  Aqui entra o { NAVBAR } (Eric, Henrique, Gustavo e André)  -->
+  <nav class="navbar navbar-expand-lg navbar-light px-5 py-3" id="navbar">
+    <div>
+      <img src="/IMAGES/logo.png" alt="site-logo" class="navbar-logo">
+      <a class="navbar-brand nav-name-title" href="#" id=tuneo>tuneo</a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+      <ul class="navbar-nav d-flex gap-3">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" id="So">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Favoritos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Destaques</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
 
 
