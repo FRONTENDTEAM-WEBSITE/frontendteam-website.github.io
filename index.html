@@ -5,32 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
     <style>
+
     body {
-      background: linear-gradient(120deg, #3C3930 30%, #A23751 100%);
+      background: linear-gradient(143deg,rgba(5, 31, 57, 1) 0%, rgba(74, 36, 128, 1) 34%, rgba(197, 58, 157, 1) 72%, rgba(211, 122, 111, 1) 98%);
       height: 100vh;
       margin: 0;
-
     }
-    .navbar-logo{
-      width: 8vh;
-    }
-
+	
     #navbar {
-      font-weight: 555;
-      font-size: 2vh;
-      border-bottom: 1px solid black;
+	  font-family: 'Inria Sans', sans-serif;
+    }
+	
+	.navbarLogo{
+      width: 4vh;
     }
 
-    #tuneo-title {
-      font-size: 28px !important;
-      color: #FFDBE4;
-      font-family: 'Inria Sans', sans-serif;
+    #navTitle {
+      color: #FFFFFF;
+	  font-weight: 600; 
     }
 
     #navbarTogglerDemo02 a {
-      color: #FFDBE4;
-      font-weight: 400; 
-      font-family: 'Inria Sans', sans-serif;
+      color: #FFFFFF;
     }
  
  
@@ -43,21 +39,26 @@
 <body>
   <!--  Aqui entra o { NAVBAR } (Eric, Henrique, Gustavo e André)  -->
 
-  <nav class="navbar navbar-expand-lg navbar-light px-5" id="navbar">
+			<!--  Titulo site com imagem  -->
+
+  <nav class="navbar navbar-expand-lg navbar-light border-bottom px-5" id="navbar">
     <div class="d-flex align-items-center">
-      <img src="./IMAGES/logo.png" alt="site-logo" class="navbar-logo me-2">
-      <a class="navbar-brand" href="#" id="tuneo-title">Tuneo</a>
+      <img src="./IMAGES/defaultlogo.png" alt="siteLogo" class="navbarLogo me-2">
+      <a class="navbar-brand fs-3" href="index.html" id="navTitle">Tuneo</a>
     </div>
+	
+			<!--  subtopicos  -->
+	
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button>	
     <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
-      <ul class="navbar-nav sub-title">
+      <ul class="navbar-nav fs-5">
         <li class="nav-item">
-          <a class="nav-link" href="#">Sobre</a>
+          <a class="nav-link" href="about.html">Sobre</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Favoritos</a>
+          <a class="nav-link" href="favorites.html">Favoritos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Destaques</a>
