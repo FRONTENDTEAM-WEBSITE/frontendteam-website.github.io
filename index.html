@@ -1,69 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <style>
-    body{
-    background: linear-gradient(120deg, #3C3930 30%, #A23751 100%);
-    background-blend-mode: overlay;
-    height: 1000px;
-    }
-    .navbar-logo{
-        width: 8vh;
-    }
-
-    #tuneo{
-        font-size: 4vh !important;
-        position: relative;
-        top: 8px;
-    }
-    #navbar {
-        border-bottom: 1px solid black;
-    }
-    #navbar a {
-      color: #FFDBE4;
-      font-size: 2vh;
-
-    }
-    .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28 255, 219, 228, 1 %29' stroke-width='3' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    }
-  </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
+    <style>
+    body {
+      background: linear-gradient(120deg, #3C3930 30%, #A23751 100%);
+      height: 100vh;
+      margin: 0;
 
+    }
+    .navbar-logo{
+      width: 8vh;
+    }
+
+    #navbar {
+      font-weight: 555;
+      font-size: 2vh;
+      border-bottom: 1px solid black;
+    }
+
+    #tuneo-title {
+      font-size: 28px !important;
+      color: #FFDBE4;
+      font-family: 'Inria Sans', sans-serif;
+    }
+
+    #navbarTogglerDemo02 a {
+      color: #FFDBE4;
+      font-weight: 400; 
+      font-family: 'Inria Sans', sans-serif;
+    }
+ 
+ 
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!--  Bootstrap CSS  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
   <!--  Aqui entra o { NAVBAR } (Eric, Henrique, Gustavo e André)  -->
-  <nav class="navbar navbar-expand-lg navbar-light px-5 py-3" id="navbar">
-    <div>
-      <img src="/IMAGES/logo.png" alt="site-logo" class="navbar-logo">
-      <a class="navbar-brand nav-name-title" href="#" id=tuneo>tuneo</a>
+
+  <nav class="navbar navbar-expand-lg navbar-light px-5" id="navbar">
+    <div class="d-flex align-items-center">
+      <img src="./IMAGES/logo.png" alt="site-logo" class="navbar-logo me-2">
+      <a class="navbar-brand" href="#" id="tuneo-title">Tuneo</a>
     </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
     <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
-      <ul class="navbar-nav d-flex gap-3">
+      <ul class="navbar-nav sub-title">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" id="So">Sobre</a>
+          <a class="nav-link" href="#">Sobre</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Favoritos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Destaques</a>
+          <a class="nav-link" href="#">Destaques</a>
         </li>
       </ul>
     </div>
   </nav>
-
-
-
-
 
   
   <!--  Aqui entra os elementos do corpo, como { CARDS } e { FORMS } (Hian, Daniel, Tiago, Wellington e todos disponiveis)  -->
