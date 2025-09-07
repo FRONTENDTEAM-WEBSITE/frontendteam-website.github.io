@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuneo - Chico</title>
+    <title>Tuneo - Rihanna</title>
     <style>
     html, body {
       height: 100%;
@@ -11,40 +11,57 @@
       display: flex;
       flex-direction: column;
     }
-
+    
     body {
-      background: linear-gradient(120deg, #FFFFFF 30%, #FFC8D5 100%);
+      background: linear-gradient(120deg, #3C3930 30%, #A23751 100%);
       background-attachment: fixed;
       background-size: cover;
-      height: 100vh;
     }
 
     #navbar {
 	  font-family: 'Inria Sans', sans-serif;
     }
 
-	#navbarLogo{
+	  #navbarLogo{
       width: 4vh;
     }
 
     #navTitle {
 
-      color: #46393C;
+      color: #FFDBE4;
       font-weight: 600; 
     }
 
     #navbarTogglerDemo02 a {
-      color: #46393C;
+      color: #FFDBE4;
+    } 
+    #navTitle2 {
+      font-family: 'Inria Sans', sans-serif;
+      color: #FFDBE4;
+      font-weight: 500; 
     }
- 
-    .container {
-      flex: 1; 
+
+    #navTitle3 {
+      font-family: 'Inria Sans', sans-serif;
+      color: #FFDBE4;
+      font-weight: 100; 
     }
 
     #cardBackground2 {
-      background: #FFDBE4;
+      background: #46393C;
     }
 
+    #card {
+      font-family: 'Inria Sans', sans-serif;
+      font-weight: 100; 
+      background-color: #46393C;
+      color: #FFDBE4;
+    }
+
+    .container {
+      flex: 1; 
+    }
+    
     #player {
       margin-left:150px; 
       margin-right:150px; 
@@ -74,10 +91,10 @@
 
 			<!--  Titulo site com imagem  -->
 
-  <nav class="navbar navbar-expand-lg navbar-light border-bottom px-5" id="navbar">
+  <nav class="navbar navbar-expand-lg navbar-light border-black border-bottom px-5" id="navbar">
     <div class="d-flex align-items-center">
-      <a href="../DEFAULT/chico.html">
-        <img src="../../IMAGES/whitelogo.png" alt="siteLogo" class="me-2" id="navbarLogo">
+      <a href="../WHITE/rihanna.html">
+        <img src="../../IMAGES/blacklogo.png" alt="siteLogo" class="me-2" id="navbarLogo">
       </a>
       <a class="navbar-brand fs-3" href="../../index.html" id="navTitle">Tuneo</a>
     </div>
@@ -90,7 +107,7 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
       <ul class="navbar-nav fs-5">
         <li class="nav-item">
-          <a class="nav-link" href="../../white-pages/index.html">Voltar</a>
+          <a class="nav-link" href="../../black-pages/index.html">Voltar</a>
         </li>
       </ul>
     </div>
@@ -107,15 +124,15 @@
           <div class="row g-0 d-flex align-items-stretch">
             <!-- Imagem: fica em cima em telas menores e lado a lado em telas grandes -->
             <div class="col-12 col-lg-4">
-              <img src="../../IMAGES/CANTORES/chico2.jpg" class="img-fluid rounded-start rounded-top-lg h-100 object-fit-cover" alt="...">
+              <img src="../../IMAGES/CANTORES/rihanna.jpg" class="img-fluid rounded-start rounded-top-lg h-100 object-fit-cover" alt="...">
             </div>
             <div class="col-12 col-lg-8" id="cardBackground2">
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title text-black">Chico Buarque</h5>
-                <p class="card-text text-black">
-                  Francisco Buarque de Hollanda, carioca nascido em 19 de junho de 1944, é cantor, compositor, escritor e dramaturgo. Iniciou sua carreira musical com o álbum Chico Buarque de Hollanda (1966) e rapidamente se destacou no cenário nacional com sua voz marcante e letras poéticas. Ao longo da ditadura militar no Brasil, Chico tornou-se um símbolo de resistência cultural, usando sua música para criticar censura, injustiças sociais e desigualdades. Além do samba e da MPB, explorou diversos gêneros musicais, como bossa nova e choro, mantendo sempre um estilo autoral.
+                <h5 class="card-title text-white">Rihanna</h5>
+                <p class="card-text text-white">
+                  Robyn Rihanna Fenty, nascida em 20 de fevereiro de 1988 em Barbados, é cantora, compositora, empresária e atriz. Iniciou sua carreira musical com o álbum Music of the Sun (2005), ganhando rapidamente destaque internacional com seu estilo versátil que combina pop, R&B, dance e dancehall/reggae. Reconhecida por sua voz poderosa e presença marcante, Rihanna se tornou uma das artistas mais influentes de sua geração, conquistando múltiplos prêmios, incluindo Grammys, e uma base de fãs global.
 
-                  Além da música, é autor de romances e peças teatrais, consolidando-se como uma referência literária e artística no país. Com prêmios nacionais e internacionais, Chico Buarque continua influenciando gerações, sendo reconhecido não apenas pela qualidade artística de suas obras, mas também pelo engajamento social e pela capacidade de transformar experiências históricas em expressão cultural.
+                    Além da música, Rihanna expandiu sua atuação para os negócios, lançando a linha de cosméticos Fenty Beauty e a marca de lingerie Savage X Fenty, que se destacam pela inclusão e inovação no mercado. Também participou de produções cinematográficas, consolidando-se como ícone cultural e referência de estilo. Com sua carreira multifacetada, Rihanna continua a impactar a música, a moda e o entretenimento, sendo reconhecida não apenas pelo talento artístico, mas também pela capacidade de quebrar barreiras e inspirar novas gerações.
                 </p>
               </div>
             </div>
@@ -128,7 +145,7 @@
     <div class="row justify-content-center mt-5 mt-lg-8" id="player">
         <i class="fa-solid fa-circle-play"></i>
       <audio class="mt-3" controls>
-        <source src="../../MUSIC/chico.mp3" type="audio/mp3">
+        <source src="../../MUSIC/rihanna.mp3" type="audio/mp3">
       </audio>
     </div>
   </div>

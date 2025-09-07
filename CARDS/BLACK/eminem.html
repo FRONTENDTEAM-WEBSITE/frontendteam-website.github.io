@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuneo - Chico</title>
+    <title>Tuneo - Eminem</title>
     <style>
     html, body {
       height: 100%;
@@ -11,38 +11,55 @@
       display: flex;
       flex-direction: column;
     }
-
+    
     body {
-      background: linear-gradient(120deg, #FFFFFF 30%, #FFC8D5 100%);
+      background: linear-gradient(120deg, #3C3930 30%, #A23751 100%);
       background-attachment: fixed;
       background-size: cover;
-      height: 100vh;
     }
 
     #navbar {
 	  font-family: 'Inria Sans', sans-serif;
     }
 
-	#navbarLogo{
+	  #navbarLogo{
       width: 4vh;
     }
 
     #navTitle {
 
-      color: #46393C;
+      color: #FFDBE4;
       font-weight: 600; 
     }
 
     #navbarTogglerDemo02 a {
-      color: #46393C;
+      color: #FFDBE4;
+    } 
+    #navTitle2 {
+      font-family: 'Inria Sans', sans-serif;
+      color: #FFDBE4;
+      font-weight: 500; 
     }
- 
-    .container {
-      flex: 1; 
+
+    #navTitle3 {
+      font-family: 'Inria Sans', sans-serif;
+      color: #FFDBE4;
+      font-weight: 100; 
     }
 
     #cardBackground2 {
-      background: #FFDBE4;
+      background: #46393C;
+    }
+
+    #card {
+      font-family: 'Inria Sans', sans-serif;
+      font-weight: 100; 
+      background-color: #46393C;
+      color: #FFDBE4;
+    }
+
+    .container {
+      flex: 1; 
     }
 
     #player {
@@ -58,7 +75,7 @@
         margin-bottom: 40px;
       }
     }
-
+    
     </style>
 
     <!--  Google Fontes  -->
@@ -74,10 +91,10 @@
 
 			<!--  Titulo site com imagem  -->
 
-  <nav class="navbar navbar-expand-lg navbar-light border-bottom px-5" id="navbar">
+  <nav class="navbar navbar-expand-lg navbar-light border-black border-bottom px-5" id="navbar">
     <div class="d-flex align-items-center">
-      <a href="../DEFAULT/chico.html">
-        <img src="../../IMAGES/whitelogo.png" alt="siteLogo" class="me-2" id="navbarLogo">
+      <a href="../WHITE/eminem.html">
+        <img src="../../IMAGES/blacklogo.png" alt="siteLogo" class="me-2" id="navbarLogo">
       </a>
       <a class="navbar-brand fs-3" href="../../index.html" id="navTitle">Tuneo</a>
     </div>
@@ -90,7 +107,7 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
       <ul class="navbar-nav fs-5">
         <li class="nav-item">
-          <a class="nav-link" href="../../white-pages/index.html">Voltar</a>
+          <a class="nav-link" href="../../black-pages/index.html">Voltar</a>
         </li>
       </ul>
     </div>
@@ -107,15 +124,15 @@
           <div class="row g-0 d-flex align-items-stretch">
             <!-- Imagem: fica em cima em telas menores e lado a lado em telas grandes -->
             <div class="col-12 col-lg-4">
-              <img src="../../IMAGES/CANTORES/chico2.jpg" class="img-fluid rounded-start rounded-top-lg h-100 object-fit-cover" alt="...">
+              <img src="../../IMAGES/CANTORES/eminem2.jpg" class="img-fluid rounded-start rounded-top-lg h-100 object-fit-cover" alt="...">
             </div>
             <div class="col-12 col-lg-8" id="cardBackground2">
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title text-black">Chico Buarque</h5>
-                <p class="card-text text-black">
-                  Francisco Buarque de Hollanda, carioca nascido em 19 de junho de 1944, é cantor, compositor, escritor e dramaturgo. Iniciou sua carreira musical com o álbum Chico Buarque de Hollanda (1966) e rapidamente se destacou no cenário nacional com sua voz marcante e letras poéticas. Ao longo da ditadura militar no Brasil, Chico tornou-se um símbolo de resistência cultural, usando sua música para criticar censura, injustiças sociais e desigualdades. Além do samba e da MPB, explorou diversos gêneros musicais, como bossa nova e choro, mantendo sempre um estilo autoral.
+                <h5 class="card-title text-white">Eminem</h5>
+                <p class="card-text text-white">
+                  Marshall Bruce Mathers III, mais conhecido como Eminem, nasceu em 17 de outubro de 1972 em Detroit, Estados Unidos. Rapper, compositor e produtor, iniciou sua carreira de destaque com o álbum The Slim Shady LP (1999), conquistando rapidamente reconhecimento mundial por sua habilidade lírica única, narrativa intensa e impacto cultural significativo. Eminem se consolidou como um dos rappers mais influentes de todos os tempos, explorando temas pessoais e sociais com técnica e emoção que marcaram gerações.
 
-                  Além da música, é autor de romances e peças teatrais, consolidando-se como uma referência literária e artística no país. Com prêmios nacionais e internacionais, Chico Buarque continua influenciando gerações, sendo reconhecido não apenas pela qualidade artística de suas obras, mas também pelo engajamento social e pela capacidade de transformar experiências históricas em expressão cultural.
+                Além da música, Eminem expandiu sua atuação para o cinema, atuando e produzindo filmes, e fundou a gravadora Shady Records, contribuindo para revelar novos talentos do hip-hop. Reconhecido por múltiplos prêmios, incluindo Grammys, ele se tornou um ícone global, influenciando a cultura musical e popular. Com sua voz autoral e estilo inconfundível, Eminem continua a transformar experiências pessoais em expressão artística, mantendo relevância e inovação ao longo de décadas.
                 </p>
               </div>
             </div>
@@ -128,7 +145,7 @@
     <div class="row justify-content-center mt-5 mt-lg-8" id="player">
         <i class="fa-solid fa-circle-play"></i>
       <audio class="mt-3" controls>
-        <source src="../../MUSIC/chico.mp3" type="audio/mp3">
+        <source src="../../MUSIC/eminem.mp3" type="audio/mp3">
       </audio>
     </div>
   </div>
