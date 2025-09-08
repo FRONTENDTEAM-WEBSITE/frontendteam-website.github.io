@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Álbuns do Artista</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Álbuns do Artista</h1>
+      <p>Ouça os álbuns lançados pelo artista e explore suas músicas</p>
+    </header>
+
+    <div class="album-list">
+      <!-- Álbum 1 -->
+      <div class="album" onclick="showAlbumDetails('album1')">
+        <div class="album-thumbnail">
+          <img src="play-icon.png" alt="Ícone de Reprodução">
+        </div>
+        <div class="album-info">
+          <h2>Nome do Album</h2>
+          <p>Data de Lançamento: 01/01/2025</p>
+          <p>Tempo total: 32:51</p>
+        </div>
+      </div>
+      
+      <!-- Álbum 2 -->
+      <div class="album" onclick="showAlbumDetails('album2')">
+        <div class="album-thumbnail">
+          <img src="play-icon.png" alt="Ícone de Reprodução">
+        </div>
+        <div class="album-info">
+          <h2>Nome do Album 2</h2>
+          <p>Data de Lançamento: 15/03/2025</p>
+          <p>Tempo total: 45:30</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Detalhes do álbum (oculto por padrão) -->
+    <div id="album-details" class="album-details">
+      <button onclick="closeAlbumDetails()">Fechar</button>
+      <h2>Detalhes do Álbum</h2>
+      <div id="album-tracklist">
+        <!-- As faixas serão carregadas aqui via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
