@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuneo - Destaques</title>
+    <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body {
+      background: linear-gradient(143deg,rgba(5, 31, 57, 1) 0%, rgba(74, 36, 128, 1) 34%, rgba(197, 58, 157, 1) 72%, rgba(211, 122, 111, 1) 98%);
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  
+    #navbar {
+      font-family: 'Inria Sans', sans-serif;
+    }
+  
+    #navbarLogo{
+      width: 4vh;
+    }
+
+    #navTitle {
+      color: #FFFFFF;
+      font-weight: 600; 
+    }
+
+    #navbarTogglerDemo02 a {
+      color: #FFFFFF;
+    }
+
+
+
+    #navTitle2 {
+      font-family: 'Inria Sans', sans-serif;
+      color: #FFFFFF;
+      font-weight: 500; 
+    }
+
+    #navTitle3 {
+      font-family: 'Inria Sans', sans-serif;
+      color: #FFFFFF;
+      font-weight: 100; 
+    }
+
+    #card {
+      font-family: 'Inria Sans', sans-serif;
+      font-weight: 100; 
+      background-color: #620036;
+    }
+
+    .container {
+      flex: 1; 
+    }
+
+
+
+            /* === Estilos para a seção de Albuns (sem tocar no background/header/footer) === */
+        :root{
+        --card-bg: rgba(255,255,255,0.04);
+        --card-border: rgba(255,255,255,0.08);
+        --accent: rgba(255,255,255,0.95);
+        --muted: rgba(255,255,255,0.75);
+        --gap: 1.25rem;
+        --radius: 12px;
+        }
+
+        #albums-section {
+        padding: 3.5rem 1rem;
+        color: var(--accent);
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+
+        #albums-section .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        }
+
+        .section-title {
+        font-size: 2.25rem;
+        margin: 0 0 0.25rem;
+        font-weight: 700;
+        }
+
+        .section-subtitle {
+        color: var(--muted);
+        margin: 0 0 1.5rem 0;
+        font-size: 1.05rem;
+        }
+
+        /* Grid responsivo */
+        .albums-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: var(--gap);
+        }
+
+        /* cards em visual horizontal (imagem + info) */
+        .album-card {
+        display: grid;
+        grid-template-columns: 130px 1fr;
+        gap: 1rem;
+        align-items: center;
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        padding: 1rem;
+        border-radius: var(--radius);
+        transition: transform .22s cubic-bezier(.2,.9,.3,1), box-shadow .22s;
+        overflow: hidden;
+        outline: none;
+        }
+
+        /* foco e hover (mesma ideia) */
+        .album-card:hover,
+        .album-card:focus {
+        transform: translateY(-6px) scale(1.005);
+        box-shadow: 0 10px 30px rgba(5,5,10,0.35);
+        }
+
+        /* Capa do álbum */
+        .album-cover {
+        margin: 0;
+        position: relative;
+        width: 130px;
+        height: 130px;
+        flex: 0 0 130px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: block;
+        background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.12));
+        }
+
+        .album-cover img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transform-origin: center;
+        transition: transform .35s cubic-bezier(.2,.9,.3,1);
+        }
+
+        /* Play button overlay */
+        .play-btn{
+        position: absolute;
+        inset: auto 8px 8px auto;
+        margin: 0;
+        background: rgba(0,0,0,0.45);
+        color: white;
+        border: none;
+        padding: 8px;
+        border-radius: 8px;
+        display: inline-grid;
+        place-items: center;
+        cursor: pointer;
+        transition: background .18s, transform .18s;
+        backdrop-filter: blur(4px);
+        }
+        .play-btn:focus { outline: 2px solid rgba(255,255,255,0.12); }
+
+        /* Ao hover do card, dá um zoom leve na imagem e destaque no botão */
+        .album-card:hover .album-cover img,
+        .album-card:focus .album-cover img {
+        transform: scale(1.06);
+        }
+        .album-card:hover .play-btn,
+        .album-card:focus .play-btn {
+        transform: translateY(-3px);
+        background: rgba(0,0,0,0.6);
+        }
+
+        /* info do álbum */
+        .album-info {
+        min-width: 0;
+        }
+        .album-title {
+        margin: 0 0 .25rem 0;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--accent);
+        }
+
+        /* meta como DL para semântica */
+        .album-meta {
+        margin: 0 0 .5rem 0;
+        }
+        .album-meta .meta-row {
+        display: flex;
+        gap: .6rem;
+        font-size: .95rem;
+        align-items: baseline;
+        margin-bottom: .32rem;
+        }
+        .album-meta dt {
+        min-width: 160px;
+        color: var(--muted);
+        font-weight: 600;
+        }
+        .album-meta dd {
+        margin: 0;
+        color: var(--accent);
+        font-weight: 500;
+        }
+
+        /* descrição */
+        .album-desc {
+        margin: 0;
+        color: rgba(255,255,255,0.75);
+        font-size: .95rem;
+        }
+
+        /* Responsividade */
+        @media (max-width: 860px) {
+        .album-card { grid-template-columns: 110px 1fr; padding: .75rem; }
+        .album-cover { width: 110px; height: 110px; }
+        .album-meta dt { min-width: 120px; font-size: .9rem;}
+        }
+        @media (max-width: 540px) {
+        .albums-grid { grid-template-columns: 1fr; }
+        .album-card { grid-template-columns: 1fr; grid-auto-rows: auto; gap: .6rem; align-items: start; }
+        .album-cover { width: 100%; height: 220px; border-radius: 10px; }
+        .album-meta dt { min-width: auto; width: 40%; }
+        .album-meta .meta-row { flex-direction: row; }
+        }
+
+    </style>
+
+    <!--  Google Fontes  -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--  Bootstrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+  <!--  Aqui entra o { NAVBAR } (Eric, Henrique, Gustavo e André)  -->
+
+			<!--  Titulo site com imagem  -->
+
+  <nav class="navbar navbar-expand-lg navbar-light border-bottom px-5" id="navbar">
+    <div class="d-flex align-items-center">
+      <img src="/IMAGES/defaultlogo.png" alt="siteLogo" class="me-2" id="navbarLogo">
+      <a class="navbar-brand fs-3" href="/index.html" id="navTitle">Tuneo</a>
+    </div>
+	
+			<!--  subtopicos  -->
+	
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>	
+    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+      <ul class="navbar-nav fs-5">
+        <li class="nav-item">
+          <a class="nav-link" href="/about.html">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/favorites.html">Favoritos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Destaques</a>
+        </li>
+      </ul>
+      <a href="/black-pages/index.html">
+        <button id="btnThemeToggle" class="btn btn-sm ms-1 btn-outline-light">🌙</button>
+      </a>
+    </div>
+  </nav>
+
+  
+  <!--  Aqui entra os elementos do corpo, como { CARDS } e { FORMS } (Hian, Daniel, Tiago, Wellington e todos disponiveis)  -->
+
+
+      <section id="albums-section" aria-labelledby="albums-title-rihanna">
+        <div class="container">
+          <h2 id="albums-title-rihanna" class="section-title">Albuns - Rihanna</h2>
+          <p class="section-subtitle">Ouça os Albuns lançados pelo artista</p>
+      
+          <div class="albums-grid">
+            <!-- Album 1 -->
+            <article class="album-card" tabindex="0">
+              <figure class="album-cover">
+                <img src="/albuns/imgs/rihanna1.png" alt="Capa do álbum Good Girl Gone Bad">
+                <button class="play-btn" aria-label="Tocar Good Girl Gone Bad" type="button">
+                  <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                    <path d="M8 5v14l11-7z" fill="currentColor"/>
+                  </svg>
+                </button>
+              </figure>
+      
+              <div class="album-info">
+                <h3 class="album-title">Good Girl Gone Bad</h3>
+                <dl class="album-meta">
+                  <div class="meta-row">
+                    <dt>Album:</dt><dd>Good Girl Gone Bad</dd>
+                  </div>
+                  <div class="meta-row">
+                    <dt>Data de lançamento:</dt><dd>2007</dd>
+                  </div>
+                  <div class="meta-row">
+                    <dt>Número de faixas:</dt><dd>12</dd>
+                  </div>
+                </dl>
+              </div>
+            </article>
+      
+            <!-- Album 2 -->
+            <article class="album-card" tabindex="0">
+              <figure class="album-cover">
+                <img src="/albuns/imgs/rihanna2.png" alt="Capa do álbum Rated R">
+                <button class="play-btn" aria-label="Tocar Rated R" type="button">
+                  <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                    <path d="M8 5v14l11-7z" fill="currentColor"/>
+                  </svg>
+                </button>
+              </figure>
+      
+              <div class="album-info">
+                <h3 class="album-title">Rated R</h3>
+                <dl class="album-meta">
+                  <div class="meta-row">
+                    <dt>Album:</dt><dd>Rated R</dd>
+                  </div>
+                  <div class="meta-row">
+                    <dt>Data de lançamento:</dt><dd>2009</dd>
+                  </div>
+                  <div class="meta-row">
+                    <dt>Número de faixas:</dt><dd>13</dd>
+                  </div>
+                </dl>
+              </div>
+            </article>
+      
+            <!-- Album 3 -->
+            <article class="album-card" tabindex="0">
+              <figure class="album-cover">
+                <img src="/albuns/imgs/rihanna3.png" alt="Capa do álbum Anti">
+                <button class="play-btn" aria-label="Tocar Anti" type="button">
+                  <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                    <path d="M8 5v14l11-7z" fill="currentColor"/>
+                  </svg>
+                </button>
+              </figure>
+      
+              <div class="album-info">
+                <h3 class="album-title">Anti</h3>
+                <dl class="album-meta">
+                  <div class="meta-row">
+                    <dt>Album:</dt><dd>Anti</dd>
+                  </div>
+                  <div class="meta-row">
+                    <dt>Data de lançamento:</dt><dd>2016</dd>
+                  </div>
+                  <div class="meta-row">
+                    <dt>Número de faixas:</dt><dd>16</dd>
+                  </div>
+                </dl>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+        
+
+
+  <!--  Aqui entra o { FOOTER }  (Meireles, Lais, Mary e todos disponiveis)  -->
+
+
+  <footer class="text-center text-lg-start text-white">
+    <div class="text-center p-3" >
+      © 2025 Copyright:
+      <a class="text-body" href="frontendteam-website.github.io">frontendteam-website.github.io</a>
+    </div>
+  </footer>
+  
+  <!--  Bootstrap JS  -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
