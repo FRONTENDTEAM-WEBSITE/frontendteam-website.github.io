@@ -5,15 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
     <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
     body {
       background: linear-gradient(120deg, #3C3930 30%, #A23751 100%);
       background-attachment: fixed;
       background-size: cover;
-      height: 100vh;
     }
+
 
     #navbar {
 	  font-family: 'Inria Sans', sans-serif;
+    margin-bottom: 3rem;
     }
 
 	  #navbarLogo{
@@ -26,9 +34,32 @@
       font-weight: 600; 
     }
 
+    #navTitle3 {
+      font-family: 'Inria Sans', sans-serif;
+      color: #46393C;
+      font-weight: 400; 
+    }
+
     #navbarTogglerDemo02 a {
       color: #FFDBE4;
     }
+
+    .container {
+      flex: 1; 
+    }
+
+    #footer_copyright {
+        text-align: center;
+        font-size: 0.85rem;
+        padding: 1rem;
+        font-family: 'Inria Sans', sans-serif;
+        color: white;
+        background-color: rgba(75, 75, 75, 0.151);
+        
+    }
+
+
+
  
 
     </style>
@@ -62,6 +93,9 @@
           <a class="nav-link" href="about.html">Sobre</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="radio.html">Radio</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="favorites.html">Favoritos</a>
         </li>
         <li class="nav-item">
@@ -76,6 +110,25 @@
 
 
 
+  <div class="container text-center">
+    <div class="row justify-content-center mt-5 mb-5">
+      <div class="col-12 col-md-8">
+        <h1 class="text-white display-4 fs-1" id="navTitle2">Curta e conheça novos tipos de músicas e artistas com o Tuneo!</h1>
+        <p class="mt-5 text-white" id="navTitle3">
+          A <strong>Tuneo</strong> nasceu do amor pela música e da vontade de ajudar artistas a mostrarem seu talento para o mundo. A gente acredita que a música conecta pessoas, emociona e transforma, e quer ser esse lugar onde músicos, sejam eles novos ou já conhecidos, possam brilhar de verdade.
+        </p>
+        <p class="mt-4 text-white" id="navTitle3">
+          Aqui, cada artista tem espaço para contar sua história, dividir suas músicas e conquistar fãs que sintam a mesma paixão que eles têm pelo som. A gente quer ser aquela ponte que liga quem cria música com quem quer descobrir novos ritmos e vozes incríveis.
+        </p>
+        <p class="text-white" id="navTitle3">
+          Nosso site é simples, acolhedor e feito para quem ama música de verdade — seja para encontrar aquela nova banda favorita, para se inspirar ou até para compartilhar seu próprio som com o mundo.
+        </p>
+        <p class="text-white">
+          Se você gosta de música, seja para ouvir, criar ou apoiar, a <strong>Tuneo</strong> é o seu cantinho especial na internet. Vem com a gente!
+        </p>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -83,7 +136,11 @@
 
 
 
-
+  <footer>
+    <div id="footer_copyright">
+      &#169; 2025 Tuneo - Trabalho Desenvolvimento Web
+    </div>
+  </footer>
 
   
   <!--  Bootstrap JS  -->

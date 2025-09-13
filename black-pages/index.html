@@ -21,6 +21,7 @@
 
     #navbar {
 	  font-family: 'Inria Sans', sans-serif;
+    margin-bottom: 3rem;
     }
 
 	  #navbarLogo{
@@ -59,6 +60,16 @@
       flex: 1; 
     }
 
+    #footer_copyright {
+        text-align: center;
+        font-size: 0.85rem;
+        padding: 1rem;
+        font-family: 'Inria Sans', sans-serif;
+        color: white;
+        background-color: rgba(75, 75, 75, 0.151);
+    }
+
+
     </style>
     <!--  Google Fontes  -->
 
@@ -90,6 +101,9 @@
           <a class="nav-link" href="about.html">Sobre</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="radio.html">Radio</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="favorites.html">Favoritos</a>
         </li>
         <li class="nav-item">
@@ -97,7 +111,7 @@
         </li>
       </ul>
       <a href="../white-pages/index.html">
-        <button id="btnThemeToggle" class="btn btn-sm btn-outline-light ms-1">☀️</button>
+        <button id="btnThemeToggle" class="btn btn-sm btn-outline-light ms-1">⚪</button>
       </a>
     </div>
   </nav>
@@ -118,9 +132,9 @@
     <div class="row">
       <div class="col-lg-3 col-md-6  mb-5 mt-5 g-1">
         
-        <div class="card border-0 text-white" id="card">
+        <div class="shadow-lg card border-0 text-white" id="card">
           <a href="../CARDS/BLACK/rihanna.html">
-            <img src="../IMAGES/CANTORES/rihanna.jpg" class="card-img-top" alt="...">
+            <img src="../IMAGES/CANTORES/rihanna.jpeg" class="card-img-top" alt="...">
           </a>
           <div class="card-body">
             <h5 class="card-title text-start">Rihanna</h5>
@@ -131,9 +145,9 @@
 
 
       <div class="col-lg-3 col-md-6 mb-5 mt-5 g-1">
-        <div class="card border-0 text-white" id="card">
+        <div class="shadow-lg card border-0 text-white" id="card">
           <a href="../CARDS/BLACK/eminem.html">
-            <img src="../IMAGES/CANTORES/eminem.jpg" class="card-img-top" alt="...">
+            <img src="../IMAGES/CANTORES/eminem.jpeg" class="card-img-top" alt="...">
           </a>
           <div class="card-body">
             <h5 class="card-title text-start">Eminem</h5>
@@ -144,7 +158,7 @@
 
 
       <div class="col-lg-3 col-md-6 mb-5 mt-5 g-1">
-        <div class="card border-0 text-white" id="card">
+        <div class="shadow-lg card border-0 text-white" id="card">
           <a href="../CARDS/BLACK/luan.html">
             <img src="../IMAGES/CANTORES/luanzinho.jpg" class="card-img-top" alt="...">
           </a>
@@ -157,9 +171,9 @@
 
 
       <div class="col-lg-3 col-md-6 mb-5 mt-5 g-1">
-        <div class="card border-0 text-white" id="card">
+        <div class="shadow-lg card border-0 text-white" id="card">
           <a href="../CARDS/BLACK/chico.html">
-            <img src="../IMAGES/CANTORES/chico.webp" class="card-img-top" alt="...">
+            <img src="../IMAGES/CANTORES/chico.jpeg" class="card-img-top" alt="...">
           </a>
           <div class="card-body">
             <h5 class="card-title text-start">Chico Buarque</h5>
@@ -178,13 +192,10 @@
 
 
 
-  <footer class="text-center text-lg-start text-white">
-    <!-- Copyright -->
-    <div class="text-center p-3" >
-      © 2025 Copyright:
-      <a class="text-body" href="frontendteam-website.github.io">frontendteam-website.github.io</a>
+  <footer>
+    <div id="footer_copyright">
+      &#169; 2025 Tuneo - Trabalho Desenvolvimento Web
     </div>
-    <!-- Copyright -->
   </footer>
 
   
