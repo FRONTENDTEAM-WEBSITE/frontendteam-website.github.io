@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuneo - Chico</title>
+    <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body {
+      background: linear-gradient(143deg,rgba(5, 31, 57, 1) 0%, rgba(74, 36, 128, 1) 34%, rgba(197, 58, 157, 1) 72%, rgba(211, 122, 111, 1) 98%);
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  
+    #navbar {
+      font-family: 'Inria Sans', sans-serif;
+      margin-bottom: 3rem;
+    }
+  
+    #navbarLogo{
+      width: 4vh;
+    }
+
+    #navTitle {
+      color: #FFFFFF;
+      font-weight: 600; 
+    }
+
+    #navbarTogglerDemo02 a {
+      color: #FFFFFF;
+    }
+
+    #cardBackground2 {
+      background: #620036;
+    }
+      
+    #navTitle2 {
+      font-family: 'Inria Sans', sans-serif;
+      font-weight: 600; 
+    }
+
+    .container {
+      flex: 1; 
+    }
+    
+    #player {
+      margin-left:150px; 
+      margin-right:150px; 
+      margin-bottom: 80px
+    }
+
+    @media (max-width: 768px) {
+      #player {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+      }
+    }
+
+    #footer_copyright {
+        text-align: center;
+        font-size: 0.85rem;
+        padding: 1rem;
+        font-family: 'Inria Sans', sans-serif;
+        color: white;
+        background-color: rgba(75, 75, 75, 0.151);
+    }
+
+
+  
+    </style>
+
+    <!--  Google Fontes  -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--  Bootstrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+  <!--  Aqui entra o { NAVBAR } (Eric, Henrique, Gustavo e André)  -->
+
+			<!--  Titulo site com imagem  -->
+
+  <nav class="navbar navbar-expand-lg navbar-light border-bottom px-5" id="navbar">
+    <div class="d-flex align-items-center">
+        <img src="../../IMAGES/defaultlogo.png" alt="siteLogo" class="me-2" id="navbarLogo">
+      <a class="navbar-brand fs-3" href="../../index.html" id="navTitle">Tuneo</a>
+    </div>
+	
+			<!--  subtopicos  -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>	
+    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+      <ul class="navbar-nav fs-5">
+        <li class="nav-item">
+          <a class="nav-link" href="../../index.html">Voltar</a>
+        </li>
+      </ul>
+      <a href="../../ALBUM/DEFAULT/albuns_chico.html" id="Button">
+        <button class="btn btn-sm btn-outline-ligh text-dark btn-light ms-2" id="btnThemeToggle">VER ÁLBUNS</button>
+      </a>
+    </div>
+  </nav>
+  
+  <!--  Aqui entra os elementos do corpo, como { CARDS } e { FORMS } (Hian, Daniel, Tiago, Wellington e todos disponiveis)  -->
+
+
+  <div class="container">
+    <div class="row justify-content-center mt-5 mt-lg-8">
+      <div class="col-12 col-lg-10">
+        <div class="shadow-lg card border-0 rounded-4">
+          <div class="row g-0 d-flex align-items-stretch">
+            <!-- Imagem: fica em cima em telas menores e lado a lado em telas grandes -->
+            <div class="col-12 col-lg-4">
+              <a href="../../ALBUM/DEFAULT/albuns_chico.html"><img src="../../IMAGES/CANTORES/chico2.jpeg" class="img-fluid rounded-start rounded-top-lg h-100 object-fit-cover" alt="..."></a>
+            </div>
+            <div class="col-12 col-lg-8" id="cardBackground2">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title text-white">Chico Buarque</h5>
+                <p class="card-text text-white">
+                  Francisco Buarque de Hollanda, carioca nascido em 19 de junho de 1944, é cantor, compositor, escritor e dramaturgo. Iniciou sua carreira musical com o álbum Chico Buarque de Hollanda (1966) e rapidamente se destacou no cenário nacional com sua voz marcante e letras poéticas. Ao longo da ditadura militar no Brasil, Chico tornou-se um símbolo de resistência cultural, usando sua música para criticar censura, injustiças sociais e desigualdades. Além do samba e da MPB, explorou diversos gêneros musicais, como bossa nova e choro, mantendo sempre um estilo autoral.
+
+                  Além da música, é autor de romances e peças teatrais, consolidando-se como uma referência literária e artística no país. Com prêmios nacionais e internacionais, Chico Buarque continua influenciando gerações, sendo reconhecido não apenas pela qualidade artística de suas obras, mas também pelo engajamento social e pela capacidade de transformar experiências históricas em expressão cultural.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center mt-5 mt-lg-8" id="player">
+        <i class="fa-solid fa-circle-play"></i>
+      <audio class="mt-3" controls>
+        <source src="../../MUSIC/chico.mp3" type="audio/mp3">
+      </audio>
+    </div>
+  </div>
+
+
+
+
+  <!--  Aqui entra o { FOOTER }  (Meireles, Lais, Mary e todos disponiveis)  -->
+
+  <footer>
+    <div id="footer_copyright">
+      &#169; 2025 Tuneo - Trabalho Desenvolvimento Web
+    </div>
+  </footer>
+  
+  <!--  Bootstrap JS  -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
