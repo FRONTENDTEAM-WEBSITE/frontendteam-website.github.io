@@ -21,6 +21,7 @@
 
     #navbar {
 	  font-family: 'Inria Sans', sans-serif;
+    margin-bottom: 3rem;
     }
 
 	#navbarLogo{
@@ -59,6 +60,17 @@
       }
     }
 
+    #footer_copyright {
+        text-align: center;
+        font-size: 0.85rem;
+        padding: 1rem;
+        font-family: 'Inria Sans', sans-serif;
+        color: white;
+        background-color: rgba(75, 75, 75, 0.151);
+    }
+
+
+
     </style>
 
     <!--  Google Fontes  -->
@@ -81,7 +93,6 @@
     </div>
 	
 			<!--  subtopicos  -->
-	
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>	
@@ -91,9 +102,11 @@
           <a class="nav-link" href="../../white-pages/index.html">Voltar</a>
         </li>
       </ul>
+        <a href="#" id="Button">
+        <button style="font-family: 'Inria Sans', sans-serif;" class="btn btn-sm btn-outline-danger  text-red ms-2" id="btnThemeToggle">ALBUM INDISPONIVEL</button>
+        </a>
     </div>
   </nav>
-
   
   <!--  Aqui entra os elementos do corpo, como { CARDS } e { FORMS } (Hian, Daniel, Tiago, Wellington e todos disponiveis)  -->
 
@@ -101,7 +114,7 @@
   <div class="container">
     <div class="row justify-content-center mt-5 mt-lg-8">
       <div class="col-12 col-lg-10">
-        <div class="card border-0 rounded-4">
+        <div class="shadow-lg card border-0 rounded-4">
           <div class="row g-0 d-flex align-items-stretch">
             <!-- Imagem: fica em cima em telas menores e lado a lado em telas grandes -->
             <div class="col-12 col-lg-4">
@@ -109,8 +122,8 @@
             </div>
             <div class="col-12 col-lg-8" id="cardBackground2">
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title text-white">Luan Santana</h5>
-                <p class="card-text text-white">
+                <h5 class="card-title text-black">Luan Santana</h5>
+                <p class="card-text text-black">
                   Luan Rafael Domingos Santana, nascido em 13 de março de 1991 em Campo Grande, Mato Grosso do Sul, é cantor, compositor e produtor musical brasileiro. Iniciou sua carreira com apresentações em bares e festivais de música sertaneja e ganhou destaque nacional com o álbum Tô de Cara (2009), consolidando-se como um dos principais nomes do sertanejo universitário. Reconhecido por sua voz marcante e presença de palco carismática, Luan mistura elementos de sertanejo tradicional e moderno, conquistando fãs de diferentes gerações.
 
                 Além da música, Luan Santana atua em programas de televisão, turnês internacionais e projetos solidários, reforçando sua imagem como artista multifacetado. Com diversos prêmios nacionais e multidões de seguidores, ele se tornou referência no cenário musical brasileiro, sendo admirado não apenas pela qualidade de suas canções, mas também pelo impacto cultural e pela capacidade de se conectar com o público de forma única.
@@ -136,10 +149,9 @@
 
   <!--  Aqui entra o { FOOTER }  (Meireles, Lais, Mary e todos disponiveis)  -->
 
-  <footer class="text-center text-lg-start text-white">
-    <div class="text-center p-3" >
-      © 2025 Copyright:
-      <a class="text-body" href="frontendteam-website.github.io">frontendteam-website.github.io</a>
+  <footer>
+    <div id="footer_copyright">
+      &#169; 2025 Tuneo - Trabalho Desenvolvimento Web
     </div>
   </footer>
   
