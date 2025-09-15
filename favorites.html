@@ -3,29 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favoritos</title>
+    <title>Tuneo - Favoritos</title>
     <style>
-      body {
-        background: linear-gradient(143deg,rgba(5, 31, 57, 1) 0%, rgba(74, 36, 128, 1) 34%, rgba(197, 58, 157, 1) 72%, rgba(211, 122, 111, 1) 98%);
-        height: 100vh;
-      }
-    
-      #navbar {
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body {
+      background: linear-gradient(143deg,rgba(5, 31, 57, 1) 0%, rgba(74, 36, 128, 1) 34%, rgba(197, 58, 157, 1) 72%, rgba(211, 122, 111, 1) 98%);
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  
+    #navbar {
+      font-family: 'Inria Sans', sans-serif;
+      margin-bottom: 3rem;
+    }
+  
+    #navbarLogo{
+      width: 4vh;
+    }
+
+    #navTitle {
+      color: #FFFFFF;
+      font-weight: 600; 
+    }
+
+    #navbarTogglerDemo02 a {
+      color: #FFFFFF;
+    }
+
+
+
+    #navTitle2 {
+      font-family: 'Inria Sans', sans-serif;
+      color: #FFFFFF;
+      font-weight: 500; 
+    }
+
+    #navTitle3 {
+      font-family: 'Inria Sans', sans-serif;
+      color: #FFFFFF;
+      font-weight: 100; 
+    }
+
+    #card {
+      font-family: 'Inria Sans', sans-serif;
+      font-weight: 100; 
+      background-color: #620036;
+    }
+
+    .container {
+      flex: 1; 
+    }
+
+    #footer_copyright {
+        text-align: center;
+        font-size: 0.85rem;
+        padding: 1rem;
         font-family: 'Inria Sans', sans-serif;
-      }
-    
-      #navbarLogo{
-        width: 4vh;
-      }
+        color: white;
+        background-color: rgba(75, 75, 75, 0.151);
+    }
 
-      #navTitle {
-        color: #FFFFFF;
-        font-weight: 600; 
-      }
 
-      #navbarTogglerDemo02 a {
-        color: #FFFFFF;
-      }
+
     </style>
 
     <!--  Google Fontes  -->
@@ -43,9 +88,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light border-bottom px-5" id="navbar">
     <div class="d-flex align-items-center">
-      <a href="black-pages/favorites.html">
-        <img src="./IMAGES/defaultlogo.png" alt="siteLogo" class="me-2" id="navbarLogo">
-      </a>
+      <img src="./IMAGES/defaultlogo.png" alt="siteLogo" class="me-2" id="navbarLogo">
       <a class="navbar-brand fs-3" href="index.html" id="navTitle">Tuneo</a>
     </div>
 	
@@ -60,12 +103,16 @@
           <a class="nav-link" href="about.html">Sobre</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="radio.html">Radio</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="favorites.html">Favoritos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="highlights.html">Destaques</a>
+          <a class="nav-link" href="index.html">Destaques</a>
         </li>
       </ul>
+      </a>
     </div>
   </nav>
 
@@ -74,15 +121,80 @@
 
 
 
+  <div class="container text-center">
+  
+			<!--  Texto em cima dos cards  -->
 
+    <div class="mb-5 mt-5">
+      <h1 class="text-white display-4 fs-1" id="navTitle2">Artistas Favoritos</h1>
+      <p class="text-white lead fs-6" id="navTitle3">Veja seus artistas preferidos</p>
+    </div>
+
+			<!--  Cards  -->
+
+    <div class="row">
+      <div class="col-lg-3 col-md-6  mb-5 mt-5 g-1">
+        
+        <div class="shadow-lg card border-0 text-white" id="card">
+          <!--<a href="CARDS/DEFAULT/racionais.html">-->
+            <img src="IMAGES/CANTORES/racionais.jpg" class="card-img-top" alt="...">
+          <!--</a>-->
+          <div class="card-body">
+            <h5 class="card-title text-center">Racionais</h5>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 col-md-6 mb-5 mt-5 g-1">
+        <div class="shadow-lg card border-0 text-white" id="card">
+          <!--<a href="CARDS/DEFAULT/mcpaiva.html">-->
+            <img src="IMAGES/CANTORES/mcpaiva.jpg" class="card-img-top" alt="...">
+          <!--</a>-->
+          <div class="card-body">
+            <h5 class="card-title text-center">Mc Paiva</h5>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 col-md-6 mb-5 mt-5 g-1">
+        <div class="shadow-lg card border-0 text-white" id="card">
+          <!--<a href="CARDS/DEFAULT/tupac.html">-->
+            <img src="IMAGES/CANTORES/tupac.jpg" class="card-img-top" alt="...">
+          <!--</a>-->
+          <div class="card-body">
+            <h5 class="card-title text-center">Tupac</h5>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 col-md-6 mb-5 mt-5 g-1">
+        <div class="shadow-lg card border-0 text-white" id="card">
+          <!-- <a href="CARDS/DEFAULT/mcig.html"> -->
+            <img src="IMAGES/CANTORES/mcig.jpg" class="card-img-top" alt="...">
+          <!-- </a> -->
+          <div class="card-body">
+            <h5 class="card-title text-center">Mc Ig</h5>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 
   <!--  Aqui entra o { FOOTER }  (Meireles, Lais, Mary e todos disponiveis)  -->
 
 
-
-
-
+  <footer>
+    <div id="footer_copyright">
+      &#169; 2025 Tuneo - Trabalho Desenvolvimento Web
+    </div>
+  </footer>
   
   <!--  Bootstrap JS  -->
 
